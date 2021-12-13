@@ -1,0 +1,73 @@
+.favo-card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favo-card .favo-img {
+  width: 100px;
+  height: 100px;
+}
+
+.favo-card .favo-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.favo-card .favo-name {
+  text-align: center;
+  width: 260px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.favo-card .favo-price {
+  text-align: center;
+  flex: 1;
+}
+
+.favo-card .favo-qty {
+  text-align: center;
+  flex: 1;
+}
+
+.favo-card .button {
+  text-align: center;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.favo-card .close {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button button {
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+  .favo-card {
+    width: 250px;
+    margin: 0 auto 30px;
+    padding: 50px 0px 20px;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+  }
+
+  .favo-card .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}

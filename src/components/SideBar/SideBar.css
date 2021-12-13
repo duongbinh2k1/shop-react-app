@@ -1,0 +1,166 @@
+.sidebar {
+  margin-top: 90px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar .sidebar-search {
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar-search::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+.sidebar-search input {
+  padding: 8px 55px 8px 18px;
+  border: 1px solid #999;
+}
+
+.sidebar-search .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.sidebar .sidebar-categories {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar-categories::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+.sidebar-categories ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar .sidebar-price {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar .sidebar-price p {
+  margin-bottom: 20px;
+}
+
+.sidebar-price::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+.sidebar .sidebar-refineby {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar-refineby::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+.sidebar .sidebar-size {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar-size::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+.sidebar .sidebar-color {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sidebar-color::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar .sidebar-search {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .sidebar .sidebar-search input {
+    width: 100%;
+  }
+
+  .sidebar .sidebar-main {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sidebar-categories {
+    margin-top: 10px;
+  }
+
+
+  .sidebar .sidebar-categories::after {
+    width: 0;
+  }
+
+  .sidebar .sidebar-categories h2:hover ul{
+    display: flex;
+  }
+
+  .sidebar-price {
+    margin-top: 10px;
+  }
+
+
+  .sidebar .sidebar-price::after {
+    width: 0;
+  }
+
+  .sidebar-search::after {
+    width: 0px;
+  }
+}

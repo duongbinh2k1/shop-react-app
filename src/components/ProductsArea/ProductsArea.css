@@ -1,0 +1,21 @@
+.products-area {
+  margin-top: 50px;
+}
+
+.products-area .product-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.products-area .product-list li {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .product-list h1 {
+    display: none;
+  }
+
+}

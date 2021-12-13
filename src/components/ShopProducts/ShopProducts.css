@@ -1,0 +1,10 @@
+
+.shop-products {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 768px){
+  .shop-products {
+    margin-top: 380px;
+  }
+}
